@@ -4,6 +4,7 @@ import Header from '../components/Header.astro';
 import Hero from '../components/Hero.astro';
 import Footer from '../components/Footer.astro';
 import '../styles/global.css';
+const base = import.meta.env.BASE_URL;
 ---
 <BaseLayout
   title="Fillter | Digital transformation lab"
@@ -16,12 +17,12 @@ import '../styles/global.css';
       <div class="section wrap" id="expertise">
         <h2>Onze expertise</h2>
         <div class="cards">
-          <a class="card" href="/disciplines/omni-en-opti-channel-solutions/"><img src="/assets/webflow-safe/omnichannel.svg" alt="Omni en Opti-channel solutions" /><h3>Omni en Opti-channel solutions</h3><p>Verkopen in je winkel met thuislevering? Online bestellingen afrekenen of retourneren aan de kassa van je filiaal? Klanten verwachten een naadloze omnichannel ervaring.</p></a>
-          <a class="card" href="/disciplines/user-experience-design/"><img src="/assets/webflow-safe/ux-design.svg" alt="User Experience Design" /><h3>User Experience Design</h3><p>Sluit jouw customer of gebruikerservaring aan bij de verwachtingen van je klant?</p></a>
-          <a class="card" href="/disciplines/conversie-optimalisatie-cro/"><img src="/assets/webflow-safe/cro.svg" alt="Conversie Optimalisatie (CRO)" /><h3>Conversie Optimalisatie (CRO)</h3><p>Hoe haal je meer omzet uit je online store? Of heb je nodig om meer sales leads te verzamelen?</p></a>
-          <a class="card" href="/disciplines/crm/"><img src="/assets/webflow-safe/crm.svg" alt="CRM" /><h3>Customer Relationship Management (CRM)</h3><p>Al je klantinformatie netjes op één overzichtelijke plek? Het klinkt eenvoudig, maar dat is het niet altijd.</p></a>
-          <a class="card" href="/disciplines/ecommerce-management/"><img src="/assets/webflow-safe/ecommerce.svg" alt="eCommerce Management" /><h3>eCommerce Management</h3><p>Online verkopen is niet meer weg te denken uit onze dagelijkse omgeving.</p></a>
-          <a class="card" href="/disciplines/marketing-automation/"><img src="/assets/webflow-safe/marketing-automation.svg" alt="Marketing Automation" /><h3>Marketing Automation</h3><p>Wil je graag sneller leads verzamelen, efficienter communiceren met je klanten?</p></a>
+          <a class="card" href={`${base}disciplines/omni-en-opti-channel-solutions/`}><img src={`${base}assets/webflow-safe/omnichannel.svg`} alt="Omni en Opti-channel solutions" /><h3>Omni en Opti-channel solutions</h3><p>Verkopen in je winkel met thuislevering? Online bestellingen afrekenen of retourneren aan de kassa van je filiaal? Klanten verwachten een naadloze omnichannel ervaring.</p></a>
+          <a class="card" href={`${base}disciplines/user-experience-design/`}><img src={`${base}assets/webflow-safe/ux-design.svg`} alt="User Experience Design" /><h3>User Experience Design</h3><p>Sluit jouw customer of gebruikerservaring aan bij de verwachtingen van je klant?</p></a>
+          <a class="card" href={`${base}disciplines/conversie-optimalisatie-cro/`}><img src={`${base}assets/webflow-safe/cro.svg`} alt="Conversie Optimalisatie (CRO)" /><h3>Conversie Optimalisatie (CRO)</h3><p>Hoe haal je meer omzet uit je online store? Of heb je nodig om meer sales leads te verzamelen?</p></a>
+          <a class="card" href={`${base}disciplines/crm/`}><img src={`${base}assets/webflow-safe/crm.svg`} alt="CRM" /><h3>Customer Relationship Management (CRM)</h3><p>Al je klantinformatie netjes op één overzichtelijke plek? Het klinkt eenvoudig, maar dat is het niet altijd.</p></a>
+          <a class="card" href={`${base}disciplines/ecommerce-management/`}><img src={`${base}assets/webflow-safe/ecommerce.svg`} alt="eCommerce Management" /><h3>eCommerce Management</h3><p>Online verkopen is niet meer weg te denken uit onze dagelijkse omgeving.</p></a>
+          <a class="card" href={`${base}disciplines/marketing-automation/`}><img src={`${base}assets/webflow-safe/marketing-automation.svg`} alt="Marketing Automation" /><h3>Marketing Automation</h3><p>Wil je graag sneller leads verzamelen, efficienter communiceren met je klanten?</p></a>
         </div>
       </div>
     </section>
@@ -29,9 +30,9 @@ import '../styles/global.css';
       <div class="w-container">
         <h2 class="heading-12">Zij gingen je al voor</h2>
         <div class="logo-row">
-          <div class="logo-card"><img src="/assets/webflow-safe/hlvo-logo.png" alt="Het Land van Ooit logo" class="customer-logo" /><div class="customer-name">Het Land van Ooit</div></div>
-          <div class="logo-card"><img src="/assets/webflow-safe/slagerij-peeters-govers-logo.jpg" alt="Slagerij Peeters Govers logo" class="customer-logo" /><div class="customer-name">Slagerij Peeters Govers</div></div>
-          <div class="logo-card"><img src="/assets/webflow-safe/psyly-logo.png" alt="Psyly logo" class="customer-logo" /><div class="customer-name">PSYLY | Sense Know Grow</div></div>
+          <div class="logo-card"><img src={`${base}assets/webflow-safe/hlvo-logo.png`} alt="Het Land van Ooit logo" class="customer-logo" /><div class="customer-name">Het Land van Ooit</div></div>
+          <div class="logo-card"><img src={`${base}assets/webflow-safe/slagerij-peeters-govers-logo.jpg`} alt="Slagerij Peeters Govers logo" class="customer-logo" /><div class="customer-name">Slagerij Peeters Govers</div></div>
+          <div class="logo-card"><img src={`${base}assets/webflow-safe/psyly-logo.png`} alt="Psyly logo" class="customer-logo" /><div class="customer-name">PSYLY | Sense Know Grow</div></div>
         </div>
       </div>
     </section>

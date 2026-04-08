@@ -1,4 +1,5 @@
 ---
+const base = import.meta.env.BASE_URL;
 ---
 <footer class="footer">
   <div class="wrap footer-grid">
@@ -9,12 +10,12 @@
     </div>
     <div>
       <h3>Links</h3>
-      <a href="/disciplines/omni-en-opti-channel-solutions/">Omni en Opti-channel</a>
-      <a href="/disciplines/user-experience-design/">User Experience</a>
-      <a href="/disciplines/conversie-optimalisatie-cro/">CRO</a>
-      <a href="/disciplines/crm/">CRM</a>
-      <a href="/disciplines/ecommerce-management/">eCommerce</a>
-      <a href="/disciplines/marketing-automation/">Marketing Automation</a>
+      <a href={`${base}disciplines/omni-en-opti-channel-solutions/`}>Omni en Opti-channel</a>
+      <a href={`${base}disciplines/user-experience-design/`}>User Experience</a>
+      <a href={`${base}disciplines/conversie-optimalisatie-cro/`}>CRO</a>
+      <a href={`${base}disciplines/crm/`}>CRM</a>
+      <a href={`${base}disciplines/ecommerce-management/`}>eCommerce</a>
+      <a href={`${base}disciplines/marketing-automation/`}>Marketing Automation</a>
     </div>
     <div>
       <h3>Mailinglijst</h3>

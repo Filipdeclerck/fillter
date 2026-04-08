@@ -7,15 +7,16 @@ const {
   body,
   related,
 } = Astro.props;
+const base = import.meta.env.BASE_URL;
 ---
 
 <section class="hero-page">
   <header class="main-navigation w-nav">
     <div class="w-container">
-      <a href="/" class="logo-container w-nav-brand">
+      <a href="" class="logo-container w-nav-brand">
         <div class="logo-columns w-row">
           <div class="logo-left w-col w-col-3">
-            <img src="/assets/webflow-safe/fillter-logo-white.svg" height="50" alt="Fillter Logo" width="50" class="image" />
+        <img src={`${base}assets/webflow-safe/fillter-logo-white.svg`} height="50" alt="Fillter Logo" width="50" class="image" />
           </div>
           <div class="logo-right w-col w-col-9">
             <div class="brand-name">Fillter</div>
@@ -23,13 +24,13 @@ const {
         </div>
       </a>
       <nav role="navigation" class="nav-menu w-nav-menu">
-        <a href="/#expertise" class="navigation-link w-nav-link">Onze Expertise</a>
-        <a href="/#contact" class="navigation-link w-nav-link">Contact</a>
+        <a href={`${base}#expertise`} class="navigation-link w-nav-link">Onze Expertise</a>
+        <a href={`${base}#contact`} class="navigation-link w-nav-link">Contact</a>
       </nav>
     </div>
   </header>
   <div class="container-6 w-container">
-    <img height="400" loading="lazy" alt={title} src={icon} class="image-6" />
+    <img height="400" loading="lazy" alt={title} src={`${base}${icon.replace(/^\//, '')}`} class="image-6" />
     <h1 class="discipline-title">{title}</h1>
     <div class="discipline-description w-richtext">
       {intro.map((p) => <p>{p}</p>)}
@@ -68,8 +69,8 @@ const {
       <div role="list" class="w-dyn-items w-row">
         {related.map((item) => (
           <div role="listitem" class="w-dyn-item w-col w-col-4">
-            <a href={item.href} class="link-block w-inline-block">
-              <img src={item.icon} loading="lazy" alt={item.title} class="image-10" />
+      <a href={`${base}${item.href.replace(/^\//, '')}`} class="link-block w-inline-block">
+              <img src={`${base}${item.icon.replace(/^\//, '')}`} loading="lazy" alt={item.title} class="image-10" />
               <h3 class="discipline-card">{item.title}</h3>
             </a>
           </div>
