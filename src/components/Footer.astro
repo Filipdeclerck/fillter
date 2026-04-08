@@ -5,22 +5,35 @@ const base = import.meta.env.BASE_URL;
   <div class="wrap footer-grid">
     <div>
       <h3>Fillter</h3>
-      <p>Pinksterbloemlaan 2, 2180 Ekeren, België</p>
+      <p>Pinksterbloemlaan 2</p>
+      <p>2180 Ekeren, België</p>
       <p>BTW BE 0744.457.677</p>
+      <p>Tel: +32(0)494777587</p>
     </div>
     <div>
-      <h3>Links</h3>
-      <a href={`${base}disciplines/omni-en-opti-channel-solutions/`}>Omni en Opti-channel</a>
-      <a href={`${base}disciplines/user-experience-design/`}>User Experience</a>
-      <a href={`${base}disciplines/conversie-optimalisatie-cro/`}>CRO</a>
-      <a href={`${base}disciplines/crm/`}>CRM</a>
-      <a href={`${base}disciplines/ecommerce-management/`}>eCommerce</a>
+      <h3>Home</h3>
+      <a href={base}>Home</a>
+      <a href={`${base}#contact`}>Contact opnemen</a>
+      <a href={`${base}#expertise`}>Onze expertise</a>
+      <a href={`${base}disciplines/omni-en-opti-channel-solutions/`}>Omni en Opti-channel solutions</a>
+      <a href={`${base}disciplines/user-experience-design/`}>User Experience Design</a>
+      <a href={`${base}disciplines/conversie-optimalisatie-cro/`}>Conversie Optimalisatie (CRO)</a>
+      <a href={`${base}disciplines/crm/`}>Customer Relationship Management (CRM)</a>
+      <a href={`${base}disciplines/ecommerce-management/`}>eCommerce Management</a>
       <a href={`${base}disciplines/marketing-automation/`}>Marketing Automation</a>
     </div>
     <div>
-      <h3>Mailinglijst</h3>
-      <p>We houden de inschrijving bewust extern en opt-in via Mailchimp.</p>
-      <a href="https://fillter.us19.list-manage.com/subscribe/post?u=e75018f53033c408f0dd48111&id=c08bb39cfe" rel="noopener noreferrer" target="_blank">Meld je aan</a>
+      <h3>Meld je aan voor updates</h3>
+      <form class="footer-form" action="https://fillter.us19.list-manage.com/subscribe/post?u=e75018f53033c408f0dd48111&id=c08bb39cfe" method="post" target="_blank" rel="noopener noreferrer">
+        <input type="email" name="EMAIL" placeholder="email" />
+        <input type="text" name="FNAME" placeholder="voornaam" />
+        <input type="text" name="LNAME" placeholder="familienaam" />
+        <label class="footer-consent">
+          <input type="checkbox" name="consent" />
+          <span>Ik geef toestemming om updates te ontvangen per email, post of social media.</span>
+        </label>
+        <button type="submit" class="button footer-button">Meld me aan</button>
+      </form>
     </div>
   </div>
 </footer>

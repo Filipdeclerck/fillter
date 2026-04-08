@@ -14,7 +14,9 @@ const base = import.meta.env.BASE_URL;
   <main>
     <section class="hero">
       <Hero />
-      <div class="section wrap" id="expertise">
+    </section>
+    <section class="section expertise-section" id="expertise">
+      <div class="wrap">
         <h2>Onze expertise</h2>
         <div class="cards">
           <a class="card" href={`${base}disciplines/omni-en-opti-channel-solutions/`}><img src={`${base}assets/webflow-safe/omnichannel.svg`} alt="Omni en Opti-channel solutions" /><h3>Omni en Opti-channel solutions</h3><p>Verkopen in je winkel met thuislevering? Online bestellingen afrekenen of retourneren aan de kassa van je filiaal? Klanten verwachten een naadloze omnichannel ervaring.</p></a>
@@ -38,10 +40,12 @@ const base = import.meta.env.BASE_URL;
     </section>
     <section class="contact-us" id="contact">
       <div class="w-container">
-        <h2 class="heading-3">Vragen? Shoot!</h2>
-        <div class="columns-2 w-row">
-          <div class="w-col w-col-6"><p class="form-paragraph">Heb je een vraag over één van onze diensten, of ben je op zoek naar een partner om jouw bedrijf klaar te stomen voor de digitale toekomst?<br/>Aarzel niet en neem contact met ons op</p></div>
-          <div class="w-col w-col-6">
+        <div class="contact-grid">
+          <div>
+            <h2 class="heading-3">Vragen? Shoot!</h2>
+            <p class="form-paragraph">Heb je een vraag over één van onze diensten, of ben je op zoek naar een partner om jouw bedrijf klaar te stomen voor de digitale toekomst?<br/>Aarzel niet en neem contact met ons op</p>
+          </div>
+          <div>
             <form class="contact-card" action="mailto:hello@fillter.be" method="post" enctype="text/plain">
               <input class="w-input" type="text" name="name" placeholder="Naam" />
               <input class="w-input" type="email" name="email" placeholder="email" />
