@@ -67,16 +67,17 @@ img { max-width: 100%; display: block; }
   display: grid;
   grid-template-columns: minmax(0, 1.05fr) minmax(320px, .95fr);
   gap: 1rem;
-  align-items: center;
-  min-height: calc(100vh - 88px);
-  padding: .5rem 0 2rem;
+  align-items: start;
+  min-height: auto;
+  padding: .35rem 0 1.5rem;
 }
 .hero-grid > div:first-child {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-self: center;
+  justify-content: flex-start;
+  align-self: start;
   max-width: 560px;
+  padding-top: .35rem;
 }
 .hero-content {
   gap: .9rem;
@@ -233,7 +234,7 @@ input, textarea {
   .hero-grid {
     min-height: auto;
     gap: 1rem;
-    padding: .5rem 0 1.5rem;
+    padding: .35rem 0 1.25rem;
     align-items: start;
   }
   .hero-grid > div:first-child {
@@ -245,7 +246,7 @@ input, textarea {
   .hero-art {
     order: 2;
     min-height: 200px;
-    margin-top: .35rem;
+    margin-top: .15rem;
   }
   .paragraph-2 {
     padding-top: 0;
@@ -273,7 +274,7 @@ input, textarea {
     width: auto;
     padding: .45rem .55rem;
   }
-  .hero-grid { padding-top: .25rem; }
+  .hero-grid { padding-top: .15rem; }
   .heading-2, h1 { font-size: clamp(40px, 11vw, 58px); }
   .hero-grid > div:first-child { padding-top: 0; }
   .hero-art { min-height: 180px; }
