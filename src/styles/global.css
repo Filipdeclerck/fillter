@@ -56,6 +56,17 @@ img { max-width: 100%; display: block; }
   overflow: hidden;
   isolation: isolate;
 }
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    url('/fillter/assets/gradient-hero.svg') center center / cover no-repeat;
+  opacity: .95;
+  filter: saturate(1.08) contrast(1.04);
+  transform: scale(1.04);
+  animation: hero-bg-pan 28s ease-in-out infinite alternate;
+  z-index: 0;
+}
 .hero::before,
 .expertise-section::before,
 .contact-us::before {
@@ -142,7 +153,7 @@ img { max-width: 100%; display: block; }
   min-height: 0;
   padding: clamp(1.75rem, 4.5vh, 3.75rem) 0 clamp(.9rem, 2vh, 1.5rem);
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 .hero-grid > div:first-child {
   display: flex;
@@ -153,6 +164,7 @@ img { max-width: 100%; display: block; }
   padding-top: 0;
 }
 .hero-content { position: relative; z-index: 1; }
+.hero-lower { position: relative; z-index: 2; }
 .contact { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start; }
 .eyebrow { text-transform: uppercase; letter-spacing: .22em; color: var(--blue); font-size: 11px; margin: 0 0 8px; font-weight: 700; }
 .hero-kicker {
@@ -325,6 +337,10 @@ input, textarea {
 @keyframes bubble-drift {
   0%, 100% { transform: translate3d(0, 0, 0) scale(1); opacity: .72; }
   50% { transform: translate3d(18px, -14px, 0) scale(1.08); opacity: .92; }
+}
+@keyframes hero-bg-pan {
+  0% { transform: scale(1.04) translate3d(0, 0, 0); }
+  100% { transform: scale(1.08) translate3d(-1.5%, -1%, 0); }
 }
 @media (min-width: 901px) {
   .hero-grid > div:first-child { padding-left: clamp(0px, 1vw, 12px); }

@@ -1,0 +1,50 @@
+<svg width="1600" height="1200" viewBox="0 0 1600 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="base" x1="0" y1="0" x2="1600" y2="1200" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2E3192"/>
+      <stop offset="48%" stop-color="#363B99"/>
+      <stop offset="100%" stop-color="#23276F"/>
+    </linearGradient>
+    <radialGradient id="violet" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(410 320) rotate(90) scale(360 460)">
+      <stop offset="0%" stop-color="#7E7FBD" stop-opacity="0.95"/>
+      <stop offset="55%" stop-color="#7E7FBD" stop-opacity="0.42"/>
+      <stop offset="100%" stop-color="#7E7FBD" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cyan" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1120 250) rotate(90) scale(420 520)">
+      <stop offset="0%" stop-color="#29ABE2" stop-opacity="0.8"/>
+      <stop offset="55%" stop-color="#29ABE2" stop-opacity="0.26"/>
+      <stop offset="100%" stop-color="#29ABE2" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="lilac" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1230 860) rotate(90) scale(320 420)">
+      <stop offset="0%" stop-color="#C8CCFF" stop-opacity="0.62"/>
+      <stop offset="60%" stop-color="#C8CCFF" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#C8CCFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="softWhite" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(210 860) rotate(90) scale(260 320)">
+      <stop offset="0%" stop-color="#F2F2F2" stop-opacity="0.32"/>
+      <stop offset="100%" stop-color="#F2F2F2" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blurA" x="0" y="0" width="1600" height="1200" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="70"/>
+    </filter>
+    <filter id="blurB" x="0" y="0" width="1600" height="1200" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="44"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="1200" fill="url(#base)"/>
+  <g filter="url(#blurA)" opacity="0.95">
+    <circle cx="410" cy="320" r="240" fill="url(#violet)"/>
+    <circle cx="1120" cy="250" r="300" fill="url(#cyan)"/>
+    <circle cx="1230" cy="860" r="230" fill="url(#lilac)"/>
+    <circle cx="210" cy="860" r="190" fill="url(#softWhite)"/>
+  </g>
+  <g filter="url(#blurB)" opacity="0.65">
+    <path d="M120 190C270 70 450 80 560 210C670 340 640 520 510 620C390 710 220 690 120 560C30 440 20 280 120 190Z" fill="#7E7FBD" fill-opacity="0.42"/>
+    <path d="M1050 160C1180 40 1400 70 1490 220C1580 370 1510 530 1350 610C1180 690 1010 620 950 480C890 340 920 240 1050 160Z" fill="#29ABE2" fill-opacity="0.22"/>
+    <path d="M960 830C1070 720 1260 725 1360 840C1460 960 1410 1100 1270 1160C1120 1220 980 1170 915 1050C860 950 870 900 960 830Z" fill="#C8CCFF" fill-opacity="0.28"/>
+  </g>
+  <g opacity="0.55">
+    <ellipse cx="360" cy="1030" rx="360" ry="120" fill="#000000" fill-opacity="0.08"/>
+    <ellipse cx="1260" cy="950" rx="280" ry="90" fill="#000000" fill-opacity="0.06"/>
+  </g>
+</svg>
