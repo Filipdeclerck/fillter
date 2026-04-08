@@ -51,14 +51,9 @@ const base = import.meta.env.BASE_URL;
   <h1 class="discipline-form-title">Vragen over </h1><h1 class="discipline-form-title">{title}</h1><h1 class="discipline-form-title">?</h1>
   <p class="paragraph-4">Neem dan geheel vrijblijvend contact met ons op. <br/>We behandelen niet elke vraag als een sales pitch, en we komen niet bedelen "om eens een kopje koffie te komen drinken" (tenzij je daarom vraagt natuurlijk ;-)</p>
   <div class="form-block w-form">
-    <form action="mailto:hello@fillter.be" method="post" enctype="text/plain" class="contact-card">
-      <label class="field-label-2" for="name">Naam</label>
-      <input class="w-input" maxlength="256" name="name" placeholder="jouw naam, niet die van je moeder..." type="text" id="name" required />
-      <label class="field-label" for="Email-adres">Email</label>
-      <input class="w-input" maxlength="256" name="Email-adres" placeholder="Zo nemen we contact met je op" type="email" id="Email-adres" required />
-      <textarea placeholder="Stel je vraag... of ook niet - wat jij wil" maxlength="5000" id="field" name="field" required class="w-input"></textarea>
-      <button type="submit" data-wait="De postduif wordt losgelaten..." class="submit-button-2 w-button">Versturen</button>
-    </form>
+    <div class="contact-card">
+      <p class="paragraph-4">Mail ons rechtstreeks op <a href="mailto:hello@fillter.be">hello@fillter.be</a>.</p>
+    </div>
   </div>
 </div>
 
