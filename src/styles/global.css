@@ -128,7 +128,7 @@ h2 { font-family: "Montserrat", Arial, sans-serif; font-size: clamp(34px, 4vw, 4
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  background: #efefef;
+  background: #ffffff;
   border-radius: 2px;
   color: var(--blue);
 }
@@ -152,6 +152,7 @@ h2 { font-family: "Montserrat", Arial, sans-serif; font-size: clamp(34px, 4vw, 4
 .logo-card { min-height: 110px; display: grid; place-items: start center; text-align: center; font-weight: 700; color: var(--text); background: transparent; border: none; box-shadow: none; padding-top: 4px; }
 .customer-logo { height: 104px; width: auto; margin-bottom: 14px; }
 .customer-name { color: var(--text); text-align: center; font-family: "Open Sans", Arial, sans-serif; font-size: 16px; font-weight: 600; }
+.customers-section { background: #ffffff; }
 .heading-3 {
   color: var(--white-smoke);
   font-family: "Open Sans", Arial, sans-serif;
