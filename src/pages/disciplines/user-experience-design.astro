@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import '../../styles/global.css';
+---
+<BaseLayout title="Fillter | User Experience Design" description="Fillter is jouw partner voor User Experience Design op maat.">
+  <Header />
+  <main class="page-main">
+    <section class="wrap section">
+      <div class="page-panel">
+        <p class="eyebrow">Discipline</p>
+        <h1>User Experience Design</h1>
+        <p class="lede">Duidelijke interfaces en flows die klanten sneller laten slagen.</p>
+      </div>
+      <div class="section-heading" style="margin-top: 2rem;">
+        <p class="eyebrow">Wat is het?</p>
+        <h2>User Experience Design?</h2>
+      </div>
+      <p class="lede">We ontwerpen duidelijke journeys en schermen zodat frustratie verdwijnt en vertrouwen groeit.</p>
+      <div class="actions" style="margin-top: 2rem;">
+        <a class="button button-dark" href="/#contact">Neem contact op</a>
+        <a class="button button-ghost" href="/#expertise">Terug naar expertise</a>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</BaseLayout>

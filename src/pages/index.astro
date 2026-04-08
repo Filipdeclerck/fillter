@@ -1,0 +1,95 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+---
+<BaseLayout
+  title="Fillter | Digital transformation lab"
+  description="Fillter is een Digital Transformation Lab voor e-commerce, digitale marketing, UX, CRM en automation."
+>
+  <Header />
+  <main>
+    <Hero />
+    <section id="expertise" class="section wrap">
+      <div class="section-heading">
+        <p class="eyebrow">Onze expertise</p>
+        <h2>De zes domeinen waar we het verschil maken.</h2>
+      </div>
+      <div class="cards">
+        <a class="card" href="/disciplines/omni-en-opti-channel-solutions/">
+          <img src="/assets/icon-omni.svg" alt="" />
+          <h3>Omni en Opti-channel solutions</h3>
+          <p>Naadloze klantervaring over winkel, e-commerce en andere touchpoints.</p>
+        </a>
+        <a class="card" href="/disciplines/user-experience-design/">
+          <img src="/assets/icon-ux.svg" alt="" />
+          <h3>User Experience Design</h3>
+          <p>Interfaces en flows die aanvoelen zoals mensen echt werken en kopen.</p>
+        </a>
+        <a class="card" href="/disciplines/conversie-optimalisatie-cro/">
+          <img src="/assets/icon-cro.svg" alt="" />
+          <h3>Conversie Optimalisatie (CRO)</h3>
+          <p>Meer omzet, meer leads en betere learnings uit je digitale kanalen.</p>
+        </a>
+        <a class="card" href="/disciplines/crm/">
+          <img src="/assets/icon-crm.svg" alt="" />
+          <h3>Customer Relationship Management (CRM)</h3>
+          <p>Betrouwbare klantdata, automatisatie en koppelingen die blijven werken.</p>
+        </a>
+        <a class="card" href="/disciplines/ecommerce-management/">
+          <img src="/assets/icon-ecommerce.svg" alt="" />
+          <h3>eCommerce Management</h3>
+          <p>Regie op je webshop, processen, platform en commerciële prioriteiten.</p>
+        </a>
+        <a class="card" href="/disciplines/marketing-automation/">
+          <img src="/assets/icon-automation.svg" alt="" />
+          <h3>Marketing Automation</h3>
+          <p>Repetitieve taken automatiseren en klantreizen slim opbouwen.</p>
+        </a>
+      </div>
+    </section>
+    <section id="customers" class="section section-alt">
+      <div class="wrap">
+        <div class="section-heading">
+          <p class="eyebrow">Zij gingen je al voor</p>
+          <h2>Projecten voor merken met ambitie.</h2>
+        </div>
+        <div class="logo-row">
+          <div class="logo-card">Het Land van Ooit</div>
+          <div class="logo-card">Slagerij Peeters Govers</div>
+          <div class="logo-card">PSYLY | Sense Know Grow</div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="section wrap contact">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2>Vragen? Shoot!</h2>
+        <p class="lede">
+          Heb je een vraag over een van onze diensten, of zoek je een partner
+          om je bedrijf digitaal klaar te stomen? Stuur ons rechtstreeks een
+          mail.
+        </p>
+        <a class="button button-dark" href="mailto:hello@fillter.be">hello@fillter.be</a>
+      </div>
+      <form class="contact-card" action="mailto:hello@fillter.be" method="post" enctype="text/plain">
+        <label>
+          Naam
+          <input type="text" name="name" placeholder="Naam" />
+        </label>
+        <label>
+          E-mail
+          <input type="email" name="email" placeholder="email" />
+        </label>
+        <label>
+          Vraag
+          <textarea name="question" rows="6" placeholder="Vraag maar raak!"></textarea>
+        </label>
+        <button class="button button-dark" type="submit">Verzenden</button>
+      </form>
+    </section>
+  </main>
+  <Footer />
+</BaseLayout>

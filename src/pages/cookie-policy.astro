@@ -1,0 +1,23 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+---
+<BaseLayout title="Fillter | Cookie policy" description="Cookie policy van Fillter.">
+  <Header />
+  <main class="page-main">
+    <section class="wrap section">
+      <p class="eyebrow">Juridisch</p>
+      <h1>Cookie policy</h1>
+      <p class="lede">
+        De oorspronkelijke Webflow-site gebruikte tools van derden zoals Google
+        Tag Manager, CookiePro en Mailchimp. Voor GitHub Pages houden we deze
+        migratie privacyvriendelijk en minimalistisch. Als je wilt, kunnen we
+        later een aparte cookieverklaring uitwerken die exact aansluit op de
+        gekozen analytics- en marketingtools.
+      </p>
+    </section>
+  </main>
+  <Footer />
+</BaseLayout>
