@@ -62,10 +62,10 @@ img { max-width: 100%; display: block; }
   inset: 0;
   background:
     url('/fillter/assets/gradient-hero.svg') center center / cover no-repeat;
-  opacity: .95;
-  filter: saturate(1.08) contrast(1.04);
-  transform: scale(1.04);
-  animation: hero-bg-pan 28s ease-in-out infinite alternate;
+  opacity: 1;
+  filter: saturate(1.22) contrast(1.06);
+  transform: scale(1.05);
+  animation: hero-bg-pan 24s ease-in-out infinite alternate;
   z-index: 0;
 }
 .hero::before,
@@ -87,7 +87,7 @@ img { max-width: 100%; display: block; }
   height: 34rem;
   right: -10rem;
   top: -8rem;
-  background: radial-gradient(circle, rgba(41, 171, 226, 0.2), transparent 68%);
+  background: radial-gradient(circle, rgba(91, 215, 255, 0.34), transparent 68%);
 }
 .expertise-section::after,
 .contact-us::after {
@@ -104,9 +104,9 @@ img { max-width: 100%; display: block; }
   height: 28rem;
   left: -8rem;
   bottom: -1rem;
-  background: radial-gradient(circle, rgba(126, 127, 189, 0.16), transparent 64%);
+  background: radial-gradient(circle, rgba(126, 127, 189, 0.22), transparent 64%);
   filter: blur(26px);
-  opacity: .75;
+  opacity: .82;
   animation: bubble-drift 28s ease-in-out infinite reverse;
 }
 .nav { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 18px 0 12px; }
