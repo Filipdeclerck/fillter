@@ -25,11 +25,40 @@ const base = import.meta.env.BASE_URL;
   const nav = document.querySelector('.nav');
   const toggle = nav?.querySelector('.nav-toggle');
   const links = nav?.querySelector('.nav-links');
+  const header = document.querySelector('.site-header');
+  const themedSections = [...document.querySelectorAll('[data-nav-theme]')];
 
   if (toggle && links) {
     toggle.addEventListener('click', () => {
       const open = nav.classList.toggle('nav-open');
       toggle.setAttribute('aria-expanded', String(open));
     });
+  }
+
+  const applyTheme = (theme) => {
+    if (!header) return;
+    header.dataset.theme = theme;
+  };
+
+  if (header && themedSections.length) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visible = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+
+        if (visible?.target instanceof HTMLElement) {
+          applyTheme(visible.target.dataset.navTheme || 'dark');
+        }
+      },
+      {
+        root: null,
+        threshold: [0.18, 0.32, 0.5, 0.72],
+        rootMargin: '-14% 0px -65% 0px',
+      },
+    );
+
+    themedSections.forEach((section) => observer.observe(section));
+    applyTheme(themedSections[0]?.dataset.navTheme || 'dark');
   }
 </script>
