@@ -68,17 +68,17 @@ img { max-width: 100%; display: block; }
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(320px, .9fr);
   gap: 1rem;
-  align-items: start;
+  align-items: center;
   min-height: auto;
-  padding: .15rem 0 .85rem;
+  padding: .1rem 0 .6rem;
 }
 .hero-grid > div:first-child {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-self: start;
+  justify-content: center;
+  align-self: center;
   max-width: 560px;
-  padding-top: .35rem;
+  padding-top: 0;
 }
 .hero-content { position: relative; z-index: 1; }
 .contact { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start; }
@@ -249,13 +249,13 @@ input, textarea {
   .hero-grid > div:first-child {
     order: 1;
     max-width: none;
-    padding-top: .25rem;
+    padding-top: .1rem;
   }
   .hero-content { gap: .7rem; }
   .hero-art {
     order: 2;
     min-height: 200px;
-    margin-top: .15rem;
+    margin-top: .1rem;
   }
   .hero-lower {
     padding: .35rem 0 1rem;
