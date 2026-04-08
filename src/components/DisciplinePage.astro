@@ -24,7 +24,7 @@ const base = import.meta.env.BASE_URL;
         </div>
       </a>
       <nav role="navigation" class="nav-menu w-nav-menu">
-        <a href={`${base}#expertise`} class="navigation-link w-nav-link">Onze Expertise</a>
+        <a href={`${base}#expertise`} class="navigation-link w-nav-link">Our expertise</a>
         <a href={`${base}#contact`} class="navigation-link w-nav-link">Contact</a>
       </nav>
     </div>
@@ -40,7 +40,7 @@ const base = import.meta.env.BASE_URL;
 
 <div id="Discipline-Content" class="section-7">
   <div class="container-9 w-container">
-    <h2 class="what-is-header">Wat is </h2><h2 class="heading-16">{title}</h2><h1 class="heading-18">?</h1>
+  <h2 class="what-is-header">What is </h2><h2 class="heading-16">{title}</h2><h1 class="heading-18">?</h1>
     <div class="rich-text-block-2 w-richtext">
       {body.map((p) => <p>{p}</p>)}
     </div>
@@ -48,18 +48,18 @@ const base = import.meta.env.BASE_URL;
 </div>
 
 <div id="on-page-Form" class="container-8 w-container">
-  <h1 class="discipline-form-title">Vragen over </h1><h1 class="discipline-form-title">{title}</h1><h1 class="discipline-form-title">?</h1>
-  <p class="paragraph-4">Neem dan geheel vrijblijvend contact met ons op. <br/>We behandelen niet elke vraag als een sales pitch, en we komen niet bedelen "om eens een kopje koffie te komen drinken" (tenzij je daarom vraagt natuurlijk ;-)</p>
+  <h1 class="discipline-form-title">Questions about </h1><h1 class="discipline-form-title">{title}</h1><h1 class="discipline-form-title">?</h1>
+  <p class="paragraph-4">Get in touch without obligation. <br/>We do not treat every question like a sales pitch, and we will not show up asking for “a coffee” unless you ask us to.</p>
   <div class="form-block w-form">
     <div class="contact-card">
-      <p class="paragraph-4">Mail ons rechtstreeks op <a href="mailto:hello@fillter.be">hello@fillter.be</a>.</p>
+      <p class="paragraph-4">Email us directly at <a href="mailto:hello@fillter.be">hello@fillter.be</a>.</p>
     </div>
   </div>
 </div>
 
 <div>
   <div class="container-10 w-container">
-    <h2 class="heading-17">Ontdek ook onze andere disciplines</h2>
+    <h2 class="heading-17">Explore our other disciplines</h2>
     <div class="w-dyn-list">
       <div role="list" class="w-dyn-items w-row">
         {related.map((item) => (
