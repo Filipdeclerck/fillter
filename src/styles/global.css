@@ -69,9 +69,9 @@ img { max-width: 100%; display: block; }
   grid-template-columns: minmax(0, 1fr) minmax(320px, .9fr);
   gap: 1rem;
   align-items: center;
-  flex: 1 1 auto;
+  flex: 0 0 auto;
   min-height: 0;
-  padding: .25rem 0 .1rem;
+  padding: clamp(2rem, 5.5vh, 4.25rem) 0 clamp(1rem, 2.5vh, 1.75rem);
 }
 .hero-grid > div:first-child {
   display: flex;
@@ -94,8 +94,8 @@ h2 { font-family: "Montserrat", Arial, sans-serif; font-size: clamp(34px, 4vw, 4
   display: grid;
   justify-items: center;
   gap: 1rem;
-  padding: 0 0 1.25rem;
-  margin-top: auto;
+  padding: 0 0 clamp(1.2rem, 3vh, 2rem);
+  margin-top: clamp(1.25rem, 3.5vh, 2.5rem);
 }
 .hero-lower .intro-copy {
   max-width: 650px;
@@ -244,10 +244,8 @@ input, textarea {
   }
   .nav.nav-open .nav-links { display: flex; }
   .hero-grid {
-    flex: 1 1 auto;
-    min-height: 0;
     gap: 1rem;
-    padding: .2rem 0 .1rem;
+    padding: clamp(1.6rem, 4vh, 2.8rem) 0 clamp(.9rem, 2vh, 1.3rem);
     align-items: start;
   }
   .hero-grid > div:first-child {
@@ -261,7 +259,10 @@ input, textarea {
     min-height: 180px;
     margin-top: 0;
   }
-  .hero-lower { padding: 0 0 .8rem; }
+  .hero-lower {
+    padding: 0 0 .8rem;
+    margin-top: clamp(1rem, 2.5vh, 1.6rem);
+  }
   .paragraph-2 {
     padding-top: 0;
     padding-bottom: 0;
@@ -312,6 +313,7 @@ input, textarea {
   .hero-grid > div:first-child { max-width: none; }
   .heading-2 { line-height: .95; }
   .heading-2.nd { margin-top: -4px; }
+  .hero-lower { margin-top: 1rem; }
   .expertise-section { padding-top: 18px; }
   .cards { gap: 8px; }
   .card { border-radius: 1px; }
