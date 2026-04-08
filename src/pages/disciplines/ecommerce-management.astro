@@ -1,28 +1,21 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import Header from '../../components/Header.astro';
-import Footer from '../../components/Footer.astro';
+import DisciplinePage from '../../components/DisciplinePage.astro';
 import '../../styles/global.css';
+const related = [
+  { href: '/disciplines/omni-en-opti-channel-solutions/', title: 'Omni en Opti-channel solutions', icon: '/assets/webflow-safe/omnichannel.svg' },
+  { href: '/disciplines/user-experience-design/', title: 'User Experience Design', icon: '/assets/webflow-safe/ux-design.svg' },
+  { href: '/disciplines/conversie-optimalisatie-cro/', title: 'Conversie Optimalisatie (CRO)', icon: '/assets/webflow-safe/cro.svg' },
+  { href: '/disciplines/crm/', title: 'Customer Relationship Management (CRM)', icon: '/assets/webflow-safe/crm.svg' },
+  { href: '/disciplines/marketing-automation/', title: 'Marketing Automation', icon: '/assets/webflow-safe/marketing-automation.svg' },
+];
 ---
 <BaseLayout title="Fillter | eCommerce Management" description="Fillter is jouw partner voor eCommerce Management op maat.">
-  <Header />
-  <main class="page-main">
-    <section class="wrap section">
-      <div class="page-panel">
-        <p class="eyebrow">Discipline</p>
-        <h1>eCommerce Management</h1>
-        <p class="lede">Regie op je webshop, processen, platform en commerciële prioriteiten.</p>
-      </div>
-      <div class="section-heading" style="margin-top: 2rem;">
-        <p class="eyebrow">Wat is het?</p>
-        <h2>eCommerce Management?</h2>
-      </div>
-      <p class="lede">We zorgen dat je webshop niet alleen draait, maar ook commercieel gezond groeit.</p>
-      <div class="actions" style="margin-top: 2rem;">
-        <a class="button button-dark" href="/#contact">Neem contact op</a>
-        <a class="button button-ghost" href="/#expertise">Terug naar expertise</a>
-      </div>
-    </section>
-  </main>
-  <Footer />
+  <DisciplinePage
+    title="eCommerce Management"
+    icon="/assets/webflow-safe/ecommerce.svg"
+    intro={['Online verkopen is niet meer weg te denken uit onze dagelijkse omgeving. Toch hebben veel bedrijven het vandaag moeilijk om hun e-commerce ervaring in te richten.', 'Maar welk e-commerce framework past het best bij jouw product en markt, en hoe begin je er eigenlijk aan?']}
+    body={['We bring structure to the webshop operation so the business can grow sustainably.', 'The right ecommerce setup depends on your product, market and internal workflow.', 'Management means steering both performance and day-to-day execution.']}
+    related={related}
+  />
 </BaseLayout>

@@ -1,28 +1,21 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import Header from '../../components/Header.astro';
-import Footer from '../../components/Footer.astro';
+import DisciplinePage from '../../components/DisciplinePage.astro';
 import '../../styles/global.css';
+const related = [
+  { href: '/disciplines/omni-en-opti-channel-solutions/', title: 'Omni en Opti-channel solutions', icon: '/assets/webflow-safe/omnichannel.svg' },
+  { href: '/disciplines/user-experience-design/', title: 'User Experience Design', icon: '/assets/webflow-safe/ux-design.svg' },
+  { href: '/disciplines/conversie-optimalisatie-cro/', title: 'Conversie Optimalisatie (CRO)', icon: '/assets/webflow-safe/cro.svg' },
+  { href: '/disciplines/crm/', title: 'Customer Relationship Management (CRM)', icon: '/assets/webflow-safe/crm.svg' },
+  { href: '/disciplines/ecommerce-management/', title: 'eCommerce Management', icon: '/assets/webflow-safe/ecommerce.svg' },
+];
 ---
 <BaseLayout title="Fillter | Marketing Automation" description="Fillter is jouw partner voor Marketing Automation op maat.">
-  <Header />
-  <main class="page-main">
-    <section class="wrap section">
-      <div class="page-panel">
-        <p class="eyebrow">Discipline</p>
-        <h1>Marketing Automation</h1>
-        <p class="lede">Minder repetitief werk, meer schaalbare klantcommunicatie.</p>
-      </div>
-      <div class="section-heading" style="margin-top: 2rem;">
-        <p class="eyebrow">Wat is het?</p>
-        <h2>Marketing Automation?</h2>
-      </div>
-      <p class="lede">We zetten automatisatie op die tijd bespaart, opvolging verbetert en resultaten meetbaar maakt.</p>
-      <div class="actions" style="margin-top: 2rem;">
-        <a class="button button-dark" href="/#contact">Neem contact op</a>
-        <a class="button button-ghost" href="/#expertise">Terug naar expertise</a>
-      </div>
-    </section>
-  </main>
-  <Footer />
+  <DisciplinePage
+    title="Marketing Automation"
+    icon="/assets/webflow-safe/marketing-automation.svg"
+    intro={['Wil je graag sneller leads verzamelen, efficienter communiceren met je klanten of die vervelende repetitieve handelingen overlaten aan een digitale toepassing?', 'Onze Laboranten bieden een hele reeks automation tools en experimenten aan, om jouw klantreis te automatiseren.']}
+    body={['Automation helps you do more with less manual effort.', 'We design flows that save time while making communication more relevant.', 'The best automation is invisible to the user and useful for the team.']}
+    related={related}
+  />
 </BaseLayout>

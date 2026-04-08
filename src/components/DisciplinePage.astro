@@ -1,0 +1,80 @@
+---
+const {
+  title,
+  description,
+  icon,
+  intro,
+  body,
+  related,
+} = Astro.props;
+---
+
+<section class="hero-page">
+  <header class="main-navigation w-nav">
+    <div class="w-container">
+      <a href="/" class="logo-container w-nav-brand">
+        <div class="logo-columns w-row">
+          <div class="logo-left w-col w-col-3">
+            <img src="/assets/webflow-safe/fillter-logo-white.svg" height="50" alt="Fillter Logo" width="50" class="image" />
+          </div>
+          <div class="logo-right w-col w-col-9">
+            <div class="brand-name">Fillter</div>
+          </div>
+        </div>
+      </a>
+      <nav role="navigation" class="nav-menu w-nav-menu">
+        <a href="/#expertise" class="navigation-link w-nav-link">Onze Expertise</a>
+        <a href="/#contact" class="navigation-link w-nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <div class="container-6 w-container">
+    <img height="400" loading="lazy" alt={title} src={icon} class="image-6" />
+    <h1 class="discipline-title">{title}</h1>
+    <div class="discipline-description w-richtext">
+      {intro.map((p) => <p>{p}</p>)}
+    </div>
+  </div>
+</section>
+
+<div id="Discipline-Content" class="section-7">
+  <div class="container-9 w-container">
+    <h2 class="what-is-header">Wat is </h2><h2 class="heading-16">{title}</h2><h1 class="heading-18">?</h1>
+    <div class="rich-text-block-2 w-richtext">
+      {body.map((p) => <p>{p}</p>)}
+    </div>
+  </div>
+</div>
+
+<div id="on-page-Form" class="container-8 w-container">
+  <h1 class="discipline-form-title">Vragen over </h1><h1 class="discipline-form-title">{title}</h1><h1 class="discipline-form-title">?</h1>
+  <p class="paragraph-4">Neem dan geheel vrijblijvend contact met ons op. <br/>We behandelen niet elke vraag als een sales pitch, en we komen niet bedelen "om eens een kopje koffie te komen drinken" (tenzij je daarom vraagt natuurlijk ;-)</p>
+  <div class="form-block w-form">
+    <form action="mailto:hello@fillter.be" method="post" enctype="text/plain" class="contact-card">
+      <label class="field-label-2" for="name">Naam</label>
+      <input class="w-input" maxlength="256" name="name" placeholder="jouw naam, niet die van je moeder..." type="text" id="name" required />
+      <label class="field-label" for="Email-adres">Email</label>
+      <input class="w-input" maxlength="256" name="Email-adres" placeholder="Zo nemen we contact met je op" type="email" id="Email-adres" required />
+      <textarea placeholder="Stel je vraag... of ook niet - wat jij wil" maxlength="5000" id="field" name="field" required class="w-input"></textarea>
+      <button type="submit" data-wait="De postduif wordt losgelaten..." class="submit-button-2 w-button">Versturen</button>
+    </form>
+  </div>
+</div>
+
+<div>
+  <div class="container-10 w-container">
+    <h2 class="heading-17">Ontdek ook onze andere disciplines</h2>
+    <div class="w-dyn-list">
+      <div role="list" class="w-dyn-items w-row">
+        {related.map((item) => (
+          <div role="listitem" class="w-dyn-item w-col w-col-4">
+            <a href={item.href} class="link-block w-inline-block">
+              <img src={item.icon} loading="lazy" alt={item.title} class="image-10" />
+              <h3 class="discipline-card">{item.title}</h3>
+            </a>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</div>
